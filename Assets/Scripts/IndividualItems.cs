@@ -20,13 +20,12 @@ namespace my
         {
             labelText.text = label; //display label
             levelText.text = "Lv:" + level.ToString(); //display level 0
-            upgradeCostText.text = "$" + upgradeCost.ToString(); //display starting cost, does not work
+            upgradeCostText.text = "$" + upgradeCost.ToString(); //display starting cost
         }
-
 
         public void Upgrade()
         {
-            if (StaticData.availableFunds >= upgradeCost) //if have enought funds
+            if (StaticData.availableFunds >= upgradeCost) //if have enough funds
             {
                 StaticData.availableFunds -= upgradeCost; //take cost from funds
                 level++; //increase level
