@@ -23,6 +23,7 @@ namespace my
             upgradeCostText.text = "$" + upgradeCost.ToString(); //display starting cost, does not work
         }
 
+
         public void Upgrade()
         {
             if (StaticData.availableFunds >= upgradeCost) //if have enought funds
