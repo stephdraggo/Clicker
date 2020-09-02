@@ -19,7 +19,7 @@ namespace my
         void Start()
         {
             labelText.text = label; //display label
-            levelText.text = "Lv:0"; //display level 0
+            levelText.text = "Lv:" + level.ToString(); //display level 0
             upgradeCostText.text = "$" + upgradeCost.ToString(); //display starting cost, does not work
         }
 
