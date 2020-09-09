@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace my
 {
@@ -9,8 +7,8 @@ namespace my
     {
         public void Click()
         {
-            StaticData.availableFunds += earns;
-            StaticData.totalEarnings += earns;
+            StaticData.availableFunds += earns; //add funds according to how much a click is worth
+            StaticData.totalEarnings += earns; //add to total score
         }
     }
 }

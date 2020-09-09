@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace my
@@ -19,8 +17,8 @@ namespace my
         void Start()
         {
             labelText.text = label; //display label
-            levelText.text = "Lv:" + level.ToString(); //display level 0
-            upgradeCostText.text = "$" + upgradeCost.ToString(); //display starting cost
+            levelText.text = "Lv:" + level.ToString(); //display level
+            upgradeCostText.text = "$" + upgradeCost.ToString(); //display cost
         }
 
         public void Upgrade()
@@ -34,10 +32,12 @@ namespace my
                 levelText.text = "Lv:" + level.ToString(); //display new level
                 upgradeCostText.text = "$" + upgradeCost.ToString(); //display new cost
             }
+#if UNITY_EDITOR
             else
             {
                 Debug.Log("Not enough funds.");
             }
+#endif
         }
     }
 }

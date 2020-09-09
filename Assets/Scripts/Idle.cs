@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace my
 {
@@ -11,18 +9,18 @@ namespace my
 
         void Update()
         {
-            if (bought)
+            if (bought) //if this button has been bought
             {
-                StaticData.availableFunds += earns * Time.deltaTime;
-                StaticData.totalEarnings += earns * Time.deltaTime;
+                StaticData.availableFunds += earns * Time.deltaTime; //increase funds according to earning level
+                StaticData.totalEarnings += earns * Time.deltaTime; //increase total score
             }
         }
 
         public void BuyOne()
         {
-            if (StaticData.availableFunds >= upgradeCost)
+            if (StaticData.availableFunds >= upgradeCost && bought == false) //if enough funds are available and the button has not been bought before
             {
-                bought = true;
+                bought = true; //set button to bought
             }
         }
     }
