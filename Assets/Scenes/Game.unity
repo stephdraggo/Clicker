@@ -3009,7 +3009,7 @@ MonoBehaviour:
   click: {fileID: 71643132}
   affordable: {r: 1, g: 1, b: 1, a: 1}
   notAffordable: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
-  things:
+  idleButtons:
   - {fileID: 409029188}
   - {fileID: 916271355}
   - {fileID: 877213132}

@@ -32,12 +32,6 @@ namespace my
                 levelText.text = "Lv:" + level.ToString(); //display new level
                 upgradeCostText.text = "$" + upgradeCost.ToString(); //display new cost
             }
-#if UNITY_EDITOR
-            else
-            {
-                Debug.Log("Not enough funds.");
-            }
-#endif
         }
     }
 }
